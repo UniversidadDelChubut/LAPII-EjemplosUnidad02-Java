@@ -10,16 +10,28 @@ public class Carta {
 	};
 	
 	public enum Figura {
-		AS,
-		DOS,
-		TRES,
-		CUATRO,
-		CINCO,
-		SEIS,
-		SIETE,
-		SOTA,
-		CABALLO,
-		REY
+		AS(1),
+		DOS(2),
+		TRES(3),
+		CUATRO(4),
+		CINCO(5),
+		SEIS(6),
+		SIETE(7),
+		SOTA(10),
+		CABALLO(11),
+		REY(12);
+		
+		private final int valor;
+		
+		private Figura(int valor) {
+			this.valor = valor;
+		}
+		
+		public int getValor() {
+			return valor;
+		}
+		
+		
 	};
 	
 	private Palo palo;
