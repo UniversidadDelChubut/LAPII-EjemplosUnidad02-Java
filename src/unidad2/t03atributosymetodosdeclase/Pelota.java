@@ -1,4 +1,4 @@
-package unidad2;
+package unidad2.t03atributosymetodosdeclase;
 
 public class Pelota {
 	

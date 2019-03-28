@@ -1,4 +1,4 @@
-package paqueteprueba;
+package unidad2.visibilidad;
 
 public class TestAccesoA {
 

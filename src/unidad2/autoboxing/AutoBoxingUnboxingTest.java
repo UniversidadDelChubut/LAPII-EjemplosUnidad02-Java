@@ -1,4 +1,4 @@
-package uniad2.autoboxing;
+package unidad2.autoboxing;
 
 public class AutoBoxingUnboxingTest {
 

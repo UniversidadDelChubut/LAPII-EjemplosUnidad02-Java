@@ -1,6 +1,8 @@
-package unidad2;
+package unidad2.t06clasesinternas;
 
-public class Lista <E> {
+import java.util.Iterator;
+
+public class Lista <E> implements Iterable<E> {
 	
 	private Nodo cabecera;
 	
@@ -45,22 +47,22 @@ public class Lista <E> {
 	}
 
 	public class Nodo <E> {
-		
 		private E dato;
 		private Nodo siguiente;
-		
-		
 	}
 
-	public Iterador <E> getIterador() {
-		return new Iterador <E>();
-	}
 	
 	
-	public class Iterador  <E>{
+	public class Iterador  <E> implements Iterator<E>{
 		private Nodo <E> nodoActual = Lista.this.cabecera;
 		
-		public E nextElement() {
+		@Override
+		public boolean hasNext() {
+			return nodoActual != null;
+		}
+
+		@Override
+		public E next() {
 			E valor = null;
 			if( nodoActual != null) {
 				valor = nodoActual.dato;
@@ -69,15 +71,12 @@ public class Lista <E> {
 			return valor;
 		}
 		
-		public boolean hasMoreElements() {
-			return nodoActual != null;
-		}
-		
-		
+	}
+
+	@Override
+	public Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return new Iterador <E>();
 	}
 		
 }
-
-
-
-

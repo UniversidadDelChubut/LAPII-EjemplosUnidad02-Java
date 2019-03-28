@@ -1,6 +1,6 @@
-package paqueteprueba.subpaqueteprueba;
+package unidad2.visibilidad.otropaquete;
 
-import paqueteprueba.TestA;
+import unidad2.visibilidad.TestA;
 
 public class HijoDeA extends TestA {
 

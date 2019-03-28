@@ -1,4 +1,4 @@
-package paqueteprueba.subpaqueteprueba;
+package unidad2.visibilidad.otropaquete;
 
 public class TestB {
 
