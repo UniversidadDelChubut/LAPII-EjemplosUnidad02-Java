@@ -56,31 +56,3 @@ public class Carta {
 	}
 	
 }
-
-
-/*
-
-enum dia_de_la_semana
-{
-	lunes, martes, miercoles, jueves, viernes, 	sabado, domingo
-};
-
-
-...
-
-enum dia_de_la_semana hoy;
-
-
-...
-
-hoy = sabado;
-
-
-
-Los valores definidos en enum son constantes enteras que se pueden usar en cualquier punto del programa, usando un operador de moldeo (ver ejemplo).
-Se empiezan a numerar de cero en adelante (en el ejemplo, lunes vale cero, martes vale uno, etc.)
-
-int dia = (int)sabado;	// dia = 5 
-
-
-*/
