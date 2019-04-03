@@ -4,10 +4,10 @@ public class Carta {
 	
 	public enum Palo {
 		OROS,
-		ESPADAS,
 		COPAS,
+		ESPADAS,
 		BASTOS 
-	};
+	};	
 	
 	public enum Figura {
 		AS(1),
@@ -34,9 +34,9 @@ public class Carta {
 		
 	};
 	
-	private Palo palo;
-	private Figura figura;
-	
+	private final Palo palo;
+	private final Figura figura;
+			
 	public Carta(Palo palo, Figura figura) {
 		this.palo = palo;
 		this.figura = figura;
