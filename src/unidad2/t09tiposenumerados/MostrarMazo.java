@@ -35,9 +35,21 @@ public class MostrarMazo {
 		System.out.println("MEZCLA");
 		mazo = new Mazo();
 		mazo.mezclar();
-		mazo.ordenar();	
+		
+		
+		List <Carta> todas = new LinkedList<>();
 		while ( (c =  mazo.sacarCarta() )!= null) {
-			System.out.println(c);
+			todas.add(c);
+		}
+		
+		Collections.sort(todas, new ComparadorTruco());
+		
+		
+		
+		
+		
+		for( Carta carta : todas ) {
+			System.out.println(carta);
 		}
 		
 		

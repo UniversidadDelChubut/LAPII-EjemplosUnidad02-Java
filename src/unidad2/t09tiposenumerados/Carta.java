@@ -55,4 +55,8 @@ public class Carta {
 		return this.getFigura().name() + " DE " + this.getPalo().name();
 	}
 	
+	public boolean soy (Figura figura, Palo palo) {
+		return this.getFigura().equals(figura) && this.getPalo().equals(palo);
+	}
+	
 }
